@@ -196,9 +196,7 @@ So, feel free to find it!
   
 ### On character devices and TTY
 
-<div style="background-color: antiquewhite; padding: 10px; font-style: italic;">
-  <b>On linux everything is a file</b>
-</div>
+> On linux everything is a file
 
 ... even devices, like input/ output hardware, are represented by something similar to a file. The following (taken from <a href="https://stackoverflow.com/questions/8514735/what-is-special-about-dev-tty" target="_blank">this post</a>) provides a good summary:
 
