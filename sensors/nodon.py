@@ -40,11 +40,7 @@ class Nodon():
             return "learning message", None
         else:
             temperature = self.temp_min +  ( (raw[3] - self.temp_raw_min) / self.temp_raw_max ) * self.temp_range
-            # for humidity this simplified to humidity = raw[2] / self.humid_raw_max
+            # for humidity this simplifies to: humidity = raw[2] / self.humid_raw_max
             humidity = self.humid_min + ( (raw[2] - self.humid_raw_min) / self.humid_raw_max ) * self.humid_max
 
-            # temperature2 = self.temp_min +  ( (raw[2] - self.temp_raw_min) / self.temp_raw_max ) * self.temp_range
-            # # for humidity this simplified to humidity = raw[2] / self.humid_raw_max
-            # humidity2 = self.humid_min + ( (raw[3] - self.humid_raw_min) / self.humid_raw_max ) * self.humid_max
-
-            return "temp_and_hum", (temperature, humidity) #, temperature2, humidity2
+            return "temp_and_hum", (temperature, humidity)

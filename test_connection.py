@@ -75,11 +75,9 @@ if __name__ =="__main__":
                 elif parsed_tye == "learning message":
                     print("> Learning signal detected")
                 elif parsed_tye == "temp_and_hum":
+                    # Interpretation after some crude experiments:
                     print("Temperature: ", parsed_data[0])
                     print("Humidity: ", parsed_data[1])
-                    # print("--- interpretation 2 ---")
-                    # print("Temperature: ", parsed_data[2])
-                    # print("Humidity: ", parsed_data[3])
                 else:
                     print("> Cannot translate BS4 message")
             else:
