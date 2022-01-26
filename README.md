@@ -200,19 +200,15 @@ So, feel free to find it!
 
 ... even devices, like input/ output hardware, are represented by something similar to a file. The following (taken from <a href="https://stackoverflow.com/questions/8514735/what-is-special-about-dev-tty" target="_blank">this post</a>) provides a good summary:
 
-<div style="background-color: antiquewhite; padding: 10px; font-style: italic;">
-Character Devices <br>
-<p>
-Unix supports 'device files', which aren't really files at all, but file-like access points to hardware devices. A 'character' device is one which is interfaced byte-by-byte (as opposed to buffered IO).
-</p>
-
-TTY <br>
-<p>
-  /dev/tty is a special file, representing the terminal for the current process. So, when you `echo 1 > /dev/tt`, your message ('1') will appear on your screen. Likewise, when you cat /dev/tty, your subsequent input gets duplicated (until you press Ctrl-C).
-  <br>
-  /dev/tty doesn't 'contain' anything as such, but you can read from it and write to it (for what it's worth). I can't think of a good use for it, but there are similar files which are very useful for simple IO operations (e.g. /dev/ttyS0 is normally your serial port)
-</p>
-</div>
+> Character Devices
+> 
+> Unix supports 'device files', which aren't really files at all, but file-like access points to hardware devices. A 'character' device is one which is interfaced byte-by-byte (as opposed to buffered IO).
+> 
+> TTY 
+> 
+> /dev/tty is a special file, representing the terminal for the current process. So, when you `echo 1 > /dev/tt`, your message ('1') will appear on your screen. Likewise, when you cat /dev/tty, your subsequent input gets duplicated (until you press Ctrl-C).
+> 
+> /dev/tty doesn't 'contain' anything as such, but you can read from it and write to it (for what it's worth). I can't think of a good use for it, but there are similar files which are very useful for simple IO operations (e.g. /dev/ttyS0 is normally your serial port)
 
 
 ---
