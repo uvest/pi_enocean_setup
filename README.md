@@ -158,8 +158,8 @@ The `/dev/ttyAMA0` port is the character device (='some sort of file') that we n
   ```
 
 #### 3. Use the provided script and the translation class for the sensor to test the connection
-I wrote a <a href="" target="_blank">little test script, `test_connection.py`,</a> based on the <a href="https://github.com/kipe/enocean/blob/master/examples/enocean_example.py" target="_blank">`enocean_example.py` by kipe</a>.
-It opens a connection using the enocean package and waits for messages from the sensor. It requires the translation file `/sensors/nodon.py`.
+I wrote a <a href="https://github.com/uvest/pi_enocean_setup" target="_blank">little test script</a> (`test_connection.py`) based on the <a href="https://github.com/kipe/enocean/blob/master/examples/enocean_example.py" target="_blank">`enocean_example.py` by kipe</a>.
+It opens a connection using the enocean package and waits for messages from the sensor. It requires the translation file `/sensors/nodon.py`, I also hacked together and provide [here](https://github.com/uvest/pi_enocean_setup).
 
 * Clone this repo to the pi and start the test_connection script
 
